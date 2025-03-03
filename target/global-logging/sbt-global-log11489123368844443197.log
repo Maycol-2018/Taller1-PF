@@ -1,0 +1,11 @@
+[debug] > Exec(def PeasantAlgorithm(x:Int, y:Int): Int = {   if(x == 0){     x   }   else if (x%2 == 0){     PeasantAlgorithm(x/2,y+y)   }   else{     PeasantAlgorithm(x/2,y+y) + y   } }, None, None)
+[error] Expected ID character
+[error] Not a valid command: def (similar: set, new)
+[error] Expected project ID
+[error] Expected configuration
+[error] Expected ':'
+[error] Expected key
+[error] Not a valid key: def (similar: doc, update)
+[error] def PeasantAlgorithm(x:Int, y:Int): Int = {   if(x == 0){     x   }   else if (x%2 == 0){     PeasantAlgorithm(x/2,y+y)   }   else{     PeasantAlgorithm(x/2,y+y) + y   } }
+[error]    ^
+[debug] > Exec(idea-shell, None, None)
