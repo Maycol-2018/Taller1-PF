@@ -1,6 +1,18 @@
 [debug] [zinc] IncrementalCompile -----------
 [debug] IncrementalCompile.incrementalCompile
 [debug] previous = Stamps for: 0 products, 0 sources, 0 libraries
-[debug] current source = Set()
-[debug] > initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
+[debug] current source = Set(${BASE}/src/main/scala/Multiplicacion/package.scala)
+[debug] > initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/Multiplicacion/package.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())
 [debug] Full compilation, no sources in previous analysis.
+[debug] all 1 sources are invalidated
+[debug] Initial set of included nodes: 
+[debug] Recompiling all sources: number of invalidated sources > 50.0 percent of all sources
+[debug] compilation cycle 1
+[info] compiling 1 Scala source to C:\Users\MAYCOL\Documents\Universidad\Cuarto Semestre\Programacion-F&C\TalleresProgramacionF&C\Taller1-PF\target\scala-3.3.5\classes ...
+[debug] Returning already retrieved and compiled bridge: C:\Users\MAYCOL\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-sbt-bridge\3.3.5\scala3-sbt-bridge-3.3.5.jar.
+[debug] [zinc] Running cached compiler 12070917 for Scala Compiler version 3.3.5
+[debug] [zinc] The Scala compiler is invoked with:
+[debug] 	-classpath
+[debug] 	C:\Users\MAYCOL\Documents\Universidad\Cuarto Semestre\Programacion-F&C\TalleresProgramacionF&C\Taller1-PF\target\scala-3.3.5\classes;C:\Users\MAYCOL\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala3-library_3\3.3.5\scala3-library_3-3.3.5.jar;C:\Users\MAYCOL\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.15\scala-library-2.13.15.jar
+[debug] Scala compilation took 5.6865239 s
+[info] done compiling

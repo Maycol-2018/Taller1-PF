@@ -1,6 +1,7 @@
 package object Multiplicacion {
   
   def PeasantAlgorithm(x: Int, y: Int): Int = {
+    // Version recursiva lineal del Peasant Algorithm para multiplicar dos enteros positivos
     if (x == 0) {
       x
     }
@@ -8,25 +9,17 @@ package object Multiplicacion {
       PeasantAlgorithm(x / 2, y + y)
     }
     else {
-      PeasantAlgorithm(x / 2, y + y) + y
+      y + PeasantAlgorithm(x / 2, y + y)
     }
   }
 
-  def PeasantAlgorithmIt(x: Int, y: Int): Int = {
-    var result = 0
-    var a = x
-    var b = y
-    for (_ <- 0 to 5) {
-      a /= 2
-      b += b
-      if (a % 2 != 0) {
-        result += b;
-      }
-    }
-    result
+  def PeasantAlgorithmV2(x: Int, y: Int, acc: Int = 0): Int = {
+    // Version iterativa lineal del Peasant Algorithm para multiplicar dos enteros positivos
+    if (x == 0) acc
+    else if (x % 2 == 0) PeasantAlgorithmV2(x / 2, y * 2, acc) // Si x es par, dividir y multiplicar
+    else PeasantAlgorithmV2(x / 2, y * 2, acc + y) // Si x es impar, acumular y
   }
-
-
-  PeasantAlgorithmIt(2, 4)
+  
+  
 
 }
